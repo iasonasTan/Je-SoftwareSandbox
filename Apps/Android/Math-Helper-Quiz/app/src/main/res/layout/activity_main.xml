@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_blue"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_marginHorizontal="15dp"
+        android:layout_above="@id/buttons_layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/container_shape"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <com.example.multiplication.views.MyTextView
+            android:textColor="@color/white"
+            android:id="@+id/counter_output"
+            android:layout_width="wrap_content"
+            android:background="@drawable/view_shape"
+            android:text="@string/count"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textSize="21sp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="2dp"
+            android:layout_gravity="start"
+            android:fontFamily="@font/libertinus_serif_bold" />
+
+        <com.example.multiplication.views.MyTextView
+            android:id="@+id/question_output"
+            android:paddingVertical="2dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/view_shape"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:text="0 x 0"
+            android:fontFamily="@font/libertinus_serif_bold"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <com.example.multiplication.views.MyTextView
+            android:paddingVertical="2dp"
+            android:fontFamily="@font/libertinus_serif_bold"
+            android:id="@+id/answer_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_shape"
+            android:textColor="@color/white"
+            android:layout_margin="3dp"
+            android:text="0"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_shape"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="35sp"
+                android:text="7"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_7"
+                tools:ignore="HardcodedText" />
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:text="8"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_8"
+                tools:ignore="HardcodedText" />
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:text="9"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_9"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:text="4"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_4"
+                tools:ignore="HardcodedText" />
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:text="5"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_5"
+                tools:ignore="HardcodedText" />
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:text="6"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_6"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:text="1"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_1"
+                tools:ignore="HardcodedText" />
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"
+                android:textSize="35sp"
+                android:text="2"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_2" />
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:text="3"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_3"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:id="@+id/button_0"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/view_shape"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                tools:ignore="HardcodedText" />
+
+            <com.example.multiplication.views.MyButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:fontFamily="@font/libertinus_serif_bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="35sp"
+                android:text="=>"
+                android:textAlignment="center"
+                android:background="@drawable/view_shape"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:id="@+id/button_equals"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

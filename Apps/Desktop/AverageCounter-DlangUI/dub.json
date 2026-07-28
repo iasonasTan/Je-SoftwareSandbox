@@ -1,0 +1,12 @@
+{
+	"description": "A simple gui d application that calculates average value.",
+	"license": "proprietary",
+	"authors": [
+		"iasonas"
+	],
+	"copyright": "Copyright © 2026, iasonas",
+	"name": "AverageCalculator",
+	"dependencies": {
+    	"dlangui": "~master"
+	}
+}

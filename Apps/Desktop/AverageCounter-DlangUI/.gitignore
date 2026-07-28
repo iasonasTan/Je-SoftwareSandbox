@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/AverageCalculator
+AverageCalculator.so
+AverageCalculator.dylib
+AverageCalculator.dll
+libgui_d_app.a
+AverageCalculator.a
+AverageCalculator.lib
+AverageCalculator-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

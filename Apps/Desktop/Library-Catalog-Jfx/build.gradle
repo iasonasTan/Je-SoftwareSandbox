@@ -1,0 +1,36 @@
+plugins {
+  id 'application'
+  id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+repositories {
+  mavenCentral();
+}
+
+javafx {
+  version = 25
+  modules = ['javafx.controls', 'javafx.fxml']
+}
+
+application {
+  mainClass = 'com.libcat.main.Main'
+  applicationDefaultJvmArgs = [
+      "--enable-native-access=ALL-UNNAMED",
+      "--enable-native-access=javafx.graphics",
+      "--module-path", "lib",
+      "--add-modules", "javafx.controls,javafx.fxml"
+  ]
+}
+
+def books_path = file('.books/books.xlsx');
+println("Giving program argument: "+books_path);
+
+run {
+  args = [books_path]
+}
+
+dependencies {
+  implementation 'org.apache.poi:poi-ooxml:5.3.0'
+  implementation files('libs/JFXContextLib.jar')
+  implementation files('libs/JLib.jar')
+}

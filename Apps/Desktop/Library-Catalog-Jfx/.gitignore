@@ -1,0 +1,19 @@
+.note
+.todo
+
+# Gradle
+.gradle/
+build/
+
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+.path
+
+bin
+
+

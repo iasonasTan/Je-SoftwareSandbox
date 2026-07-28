@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mathematics</string>
+    <string name="count">Count: </string>
+    <string name="answer">Answer: </string>
+</resources>

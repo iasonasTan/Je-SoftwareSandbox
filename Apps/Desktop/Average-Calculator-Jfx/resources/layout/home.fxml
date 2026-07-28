@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<VBox
+    spacing="10"
+    fx:controller="app.avcalc.controller.HomeController"
+    alignment="CENTER"
+    fillWidth="false"
+
+    xmlns:fx="http://javafx.com/fxml">
+
+    <Label
+        text="Enter values and press enter."
+        styleClass="title" />
+
+    <Label
+        fx:id="outputLabel"
+        text="Average: 0"
+        styleClass="component" />
+
+    <TextField
+        fx:id="valueField"
+        promptText="Enter values here."
+        styleClass="component" />
+
+    <Button
+        fx:id="putButton"
+        text="Add value"
+        styleClass="component"
+        onAction="#handlePutValue" />
+
+</VBox>

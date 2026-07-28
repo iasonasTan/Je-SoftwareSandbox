@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.app.rps.view.ShapeView
+            android:rotation="180"
+            android:padding="10dp"
+            android:id="@+id/player_green"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blank_green"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <com.app.rps.view.ScoreView
+            android:id="@+id/score_green"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/green"
+            android:rotation="180"
+            android:fontFamily="@font/cantarell_bold"
+            android:text="@string/initial_score_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/reset_btn"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/reset"
+                android:background="@android:color/transparent"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/settings_btn"
+                android:scaleType="fitCenter"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/settings"
+                android:background="@android:color/transparent"
+                tools:ignore="ContentDescription" />
+
+            <!-- CAN ADD MORE VIEWS LATER -->
+        </LinearLayout>
+
+        <ImageButton
+            android:padding="10dp"
+            android:id="@+id/play_btn"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/play"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription,NestedWeights" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:ignore="UselessLeaf">
+
+            <!-- CAN ADD MORE VIEWS LATER -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.app.rps.view.ScoreView
+            android:id="@+id/score_red"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/cantarell_bold"
+            android:text="@string/initial_score_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <com.app.rps.view.ShapeView
+            android:padding="10dp"
+            android:id="@+id/player_red"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blank_red"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            tools:ignore="ContentDescription,NestedWeights" />
+    </LinearLayout>
+
+</LinearLayout>

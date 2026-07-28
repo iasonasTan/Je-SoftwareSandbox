@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<verbs>
+
+    <verb><base>arise</base><past>arose</past><participle>arisen</participle><meaning>ανακύπτω</meaning></verb>
+    <verb><base>awake</base><past>awoke</past><participle>awoken</participle><meaning>ξυπνάω</meaning></verb>
+
+    <verb><base>be</base><past>was/were</past><participle>been</participle><meaning>είμαι</meaning></verb>
+    <verb><base>bear</base><past>bore</past><participle>born/borne</participle><meaning>ανέχομαι/γεννώ</meaning></verb>
+    <verb><base>beat</base><past>beat</past><participle>beaten</participle><meaning>χτυπώ</meaning></verb>
+    <verb><base>become</base><past>became</past><participle>become</participle><meaning>γίνομαι</meaning></verb>
+    <verb><base>begin</base><past>began</past><participle>begun</participle><meaning>αρχίζω</meaning></verb>
+    <verb><base>bend</base><past>bent</past><participle>bent</participle><meaning>λυγίζω</meaning></verb>
+    <verb><base>bet</base><past>bet</past><participle>bet</participle><meaning>στοιχηματίζω</meaning></verb>
+    <verb><base>bind</base><past>bound</past><participle>bound</participle><meaning>δένω</meaning></verb>
+    <verb><base>bite</base><past>bit</past><participle>bitten</participle><meaning>δαγκώνω</meaning></verb>
+    <verb><base>bleed</base><past>bled</past><participle>bled</participle><meaning>αιμορραγώ</meaning></verb>
+    <verb><base>blow</base><past>blew</past><participle>blown</participle><meaning>φυσώ</meaning></verb>
+    <verb><base>break</base><past>broke</past><participle>broken</participle><meaning>σπάζω</meaning></verb>
+    <verb><base>bring</base><past>brought</past><participle>brought</participle><meaning>φέρνω</meaning></verb>
+    <verb><base>broadcast</base><past>broadcast</past><participle>broadcast</participle><meaning>μεταδίδω</meaning></verb>
+    <verb><base>build</base><past>built</past><participle>built</participle><meaning>χτίζω</meaning></verb>
+    <verb><base>burn</base><past>burned/burnt</past><participle>burned/burnt</participle><meaning>καίω</meaning></verb>
+    <verb><base>burst</base><past>burst</past><participle>burst</participle><meaning>σκάω</meaning></verb>
+    <verb><base>buy</base><past>bought</past><participle>bought</participle><meaning>αγοράζω</meaning></verb>
+
+    <verb><base>cast</base><past>cast</past><participle>cast</participle><meaning>ρίχνω</meaning></verb>
+    <verb><base>catch</base><past>caught</past><participle>caught</participle><meaning>πιάνω</meaning></verb>
+    <verb><base>choose</base><past>chose</past><participle>chosen</participle><meaning>επιλέγω</meaning></verb>
+    <verb><base>cling</base><past>clung</past><participle>clung</participle><meaning>κολλώ</meaning></verb>
+    <verb><base>come</base><past>came</past><participle>come</participle><meaning>έρχομαι</meaning></verb>
+    <verb><base>cost</base><past>cost</past><participle>cost</participle><meaning>κοστίζω</meaning></verb>
+    <verb><base>creep</base><past>crept</past><participle>crept</participle><meaning>σέρνομαι</meaning></verb>
+    <verb><base>cut</base><past>cut</past><participle>cut</participle><meaning>κόβω</meaning></verb>
+
+    <verb><base>deal</base><past>dealt</past><participle>dealt</participle><meaning>συναλλάσσομαι</meaning></verb>
+    <verb><base>dig</base><past>dug</past><participle>dug</participle><meaning>σκάβω</meaning></verb>
+    <verb><base>do</base><past>did</past><participle>done</participle><meaning>κάνω</meaning></verb>
+    <verb><base>draw</base><past>drew</past><participle>drawn</participle><meaning>ζωγραφίζω/τραβώ</meaning></verb>
+    <verb><base>dream</base><past>dreamed/dreamt</past><participle>dreamed/dreamt</participle><meaning>ονειρεύομαι</meaning></verb>
+    <verb><base>drink</base><past>drank</past><participle>drunk</participle><meaning>πίνω</meaning></verb>
+    <verb><base>drive</base><past>drove</past><participle>driven</participle><meaning>οδηγώ</meaning></verb>
+
+    <verb><base>eat</base><past>ate</past><participle>eaten</participle><meaning>τρώω</meaning></verb>
+
+    <verb><base>fall</base><past>fell</past><participle>fallen</participle><meaning>πέφτω</meaning></verb>
+    <verb><base>feed</base><past>fed</past><participle>fed</participle><meaning>ταΐζω</meaning></verb>
+    <verb><base>feel</base><past>felt</past><participle>felt</participle><meaning>νιώθω</meaning></verb>
+    <verb><base>fight</base><past>fought</past><participle>fought</participle><meaning>παλεύω</meaning></verb>
+    <verb><base>find</base><past>found</past><participle>found</participle><meaning>βρίσκω</meaning></verb>
+    <verb><base>fly</base><past>flew</past><participle>flown</participle><meaning>πετώ</meaning></verb>
+    <verb><base>forbid</base><past>forbade</past><participle>forbidden</participle><meaning>απαγορεύω</meaning></verb>
+    <verb><base>forget</base><past>forgot</past><participle>forgotten</participle><meaning>ξεχνώ</meaning></verb>
+    <verb><base>forgive</base><past>forgave</past><participle>forgiven</participle><meaning>συγχωρώ</meaning></verb>
+    <verb><base>freeze</base><past>froze</past><participle>frozen</participle><meaning>παγώνω</meaning></verb>
+
+    <verb><base>get</base><past>got</past><participle>gotten/got</participle><meaning>παίρνω</meaning></verb>
+    <verb><base>give</base><past>gave</past><participle>given</participle><meaning>δίνω</meaning></verb>
+    <verb><base>go</base><past>went</past><participle>gone</participle><meaning>πηγαίνω</meaning></verb>
+    <verb><base>grind</base><past>ground</past><participle>ground</participle><meaning>αλέθω</meaning></verb>
+    <verb><base>grow</base><past>grew</past><participle>grown</participle><meaning>μεγαλώνω</meaning></verb>
+
+    <verb><base>hang</base><past>hung</past><participle>hung</participle><meaning>κρεμώ</meaning></verb>
+    <verb><base>have</base><past>had</past><participle>had</participle><meaning>έχω</meaning></verb>
+    <verb><base>hear</base><past>heard</past><participle>heard</participle><meaning>ακούω</meaning></verb>
+    <verb><base>hide</base><past>hid</past><participle>hidden</participle><meaning>κρύβω</meaning></verb>
+    <verb><base>hit</base><past>hit</past><participle>hit</participle><meaning>χτυπώ</meaning></verb>
+    <verb><base>hold</base><past>held</past><participle>held</participle><meaning>κρατώ</meaning></verb>
+    <verb><base>hurt</base><past>hurt</past><participle>hurt</participle><meaning>πληγώνω</meaning></verb>
+
+    <verb><base>keep</base><past>kept</past><participle>kept</participle><meaning>κρατώ</meaning></verb>
+    <verb><base>know</base><past>knew</past><participle>known</participle><meaning>γνωρίζω</meaning></verb>
+
+    <verb><base>lay</base><past>laid</past><participle>laid</participle><meaning>τοποθετώ</meaning></verb>
+    <verb><base>lead</base><past>led</past><participle>led</participle><meaning>ηγούμαι</meaning></verb>
+    <verb><base>lean</base><past>leaned/leant</past><participle>leaned/leant</participle><meaning>γέρνω</meaning></verb>
+    <verb><base>leap</base><past>leaped/leapt</past><participle>leaped/leapt</participle><meaning>πηδώ</meaning></verb>
+    <verb><base>learn</base><past>learned/learnt</past><participle>learned/learnt</participle><meaning>μαθαίνω</meaning></verb>
+    <verb><base>leave</base><past>left</past><participle>left</participle><meaning>φεύγω</meaning></verb>
+    <verb><base>lend</base><past>lent</past><participle>lent</participle><meaning>δανείζω</meaning></verb>
+    <verb><base>let</base><past>let</past><participle>let</participle><meaning>επιτρέπω</meaning></verb>
+    <verb><base>lie</base><past>lay</past><participle>lain</participle><meaning>ξαπλώνω</meaning></verb>
+    <verb><base>light</base><past>lit/lighted</past><participle>lit/lighted</participle><meaning>ανάβω</meaning></verb>
+    <verb><base>lose</base><past>lost</past><participle>lost</participle><meaning>χάνω</meaning></verb>
+
+    <verb><base>make</base><past>made</past><participle>made</participle><meaning>φτιάχνω</meaning></verb>
+    <verb><base>mean</base><past>meant</past><participle>meant</participle><meaning>σημαίνω</meaning></verb>
+    <verb><base>meet</base><past>met</past><participle>met</participle><meaning>συναντώ</meaning></verb>
+    <verb><base>mistake</base><past>mistook</past><participle>mistaken</participle><meaning>μπερδεύω</meaning></verb>
+
+    <verb><base>overcome</base><past>overcame</past><participle>overcome</participle><meaning>ξεπερνώ</meaning></verb>
+
+    <verb><base>pay</base><past>paid</past><participle>paid</participle><meaning>πληρώνω</meaning></verb>
+    <verb><base>prove</base><past>proved</past><participle>proven/proved</participle><meaning>αποδεικνύω</meaning></verb>
+    <verb><base>put</base><past>put</past><participle>put</participle><meaning>βάζω</meaning></verb>
+
+    <verb><base>quit</base><past>quit</past><participle>quit</participle><meaning>παραιτούμαι</meaning></verb>
+
+    <verb><base>read</base><past>read</past><participle>read</participle><meaning>διαβάζω</meaning></verb>
+    <verb><base>ride</base><past>rode</past><participle>ridden</participle><meaning>καβαλώ</meaning></verb>
+    <verb><base>ring</base><past>rang</past><participle>rung</participle><meaning>χτυπώ (π.χ. καμπάνα)</meaning></verb>
+    <verb><base>rise</base><past>rose</past><participle>risen</participle><meaning>ανεβαίνω</meaning></verb>
+    <verb><base>run</base><past>ran</past><participle>run</participle><meaning>τρέχω</meaning></verb>
+
+    <verb><base>say</base><past>said</past><participle>said</participle><meaning>λέω</meaning></verb>
+    <verb><base>see</base><past>saw</past><participle>seen</participle><meaning>βλέπω</meaning></verb>
+    <verb><base>seek</base><past>sought</past><participle>sought</participle><meaning>αναζητώ</meaning></verb>
+    <verb><base>sell</base><past>sold</past><participle>sold</participle><meaning>πουλώ</meaning></verb>
+    <verb><base>send</base><past>sent</past><participle>sent</participle><meaning>στέλνω</meaning></verb>
+    <verb><base>set</base><past>set</past><participle>set</participle><meaning>τοποθετώ</meaning></verb>
+    <verb><base>sew</base><past>sewed</past><participle>sewn/sewed</participle><meaning>ράβω</meaning></verb>
+    <verb><base>shake</base><past>shook</past><participle>shaken</participle><meaning>κουνώ</meaning></verb>
+    <verb><base>shine</base><past>shone</past><participle>shone</participle><meaning>λάμπω</meaning></verb>
+    <verb><base>shoot</base><past>shot</past><participle>shot</participle><meaning>πυροβολώ</meaning></verb>
+    <verb><base>show</base><past>showed</past><participle>shown</participle><meaning>δείχνω</meaning></verb>
+    <verb><base>shrink</base><past>shrank</past><participle>shrunk</participle><meaning>συρρικνώνομαι</meaning></verb>
+    <verb><base>shut</base><past>shut</past><participle>shut</participle><meaning>κλείνω</meaning></verb>
+    <verb><base>sing</base><past>sang</past><participle>sung</participle><meaning>τραγουδώ</meaning></verb>
+    <verb><base>sink</base><past>sank</past><participle>sunk</participle><meaning>βυθίζομαι</meaning></verb>
+    <verb><base>sit</base><past>sat</past><participle>sat</participle><meaning>κάθομαι</meaning></verb>
+    <verb><base>sleep</base><past>slept</past><participle>slept</participle><meaning>κοιμάμαι</meaning></verb>
+    <verb><base>slide</base><past>slid</past><participle>slid</participle><meaning>γλιστρώ</meaning></verb>
+    <verb><base>sling</base><past>slung</past><participle>slung</participle><meaning>ρίχνω/κρεμώ</meaning></verb>
+    <verb><base>speak</base><past>spoke</past><participle>spoken</participle><meaning>μιλώ</meaning></verb>
+    <verb><base>spend</base><past>spent</past><participle>spent</participle><meaning>ξοδεύω</meaning></verb>
+    <verb><base>spin</base><past>spun</past><participle>spun</participle><meaning>γυρίζω</meaning></verb>
+    <verb><base>spit</base><past>spat/spit</past><participle>spat/spit</participle><meaning>φτύνω</meaning></verb>
+    <verb><base>split</base><past>split</past><participle>split</participle><meaning>σπάζω</meaning></verb>
+    <verb><base>spoil</base><past>spoiled/spoilt</past><participle>spoiled/spoilt</participle><meaning>χαλάω</meaning></verb>
+    <verb><base>spread</base><past>spread</past><participle>spread</participle><meaning>απλώνω</meaning></verb>
+    <verb><base>spring</base><past>sprang</past><participle>sprung</participle><meaning>πηδώ</meaning></verb>
+    <verb><base>stand</base><past>stood</past><participle>stood</participle><meaning>στέκομαι</meaning></verb>
+    <verb><base>steal</base><past>stole</past><participle>stolen</participle><meaning>κλέβω</meaning></verb>
+    <verb><base>stick</base><past>stuck</past><participle>stuck</participle><meaning>κολλώ</meaning></verb>
+    <verb><base>sting</base><past>stung</past><participle>stung</participle><meaning>τσιμπώ</meaning></verb>
+    <verb><base>strike</base><past>struck</past><participle>struck/stricken</participle><meaning>χτυπώ</meaning></verb>
+    <verb><base>swear</base><past>swore</past><participle>sworn</participle><meaning>ορκίζομαι</meaning></verb>
+    <verb><base>sweep</base><past>swept</past><participle>swept</participle><meaning>σκουπίζω</meaning></verb>
+    <verb><base>swim</base><past>swam</past><participle>swum</participle><meaning>κολυμπώ</meaning></verb>
+
+    <verb><base>take</base><past>took</past><participle>taken</participle><meaning>παίρνω</meaning></verb>
+    <verb><base>teach</base><past>taught</past><participle>taught</participle><meaning>διδάσκω</meaning></verb>
+    <verb><base>tear</base><past>tore</past><participle>torn</participle><meaning>σκίζω</meaning></verb>
+    <verb><base>tell</base><past>told</past><participle>told</participle><meaning>λέω</meaning></verb>
+    <verb><base>think</base><past>thought</past><participle>thought</participle><meaning>σκέφτομαι</meaning></verb>
+    <verb><base>throw</base><past>threw</past><participle>thrown</participle><meaning>πετώ</meaning></verb>
+
+    <verb><base>understand</base><past>understood</past><participle>understood</participle><meaning>καταλαβαίνω</meaning></verb>
+    <verb><base>upset</base><past>upset</past><participle>upset</participle><meaning>αναστατώνω</meaning></verb>
+
+    <verb><base>wake</base><past>woke</past><participle>woken</participle><meaning>ξυπνώ</meaning></verb>
+    <verb><base>wear</base><past>wore</past><participle>worn</participle><meaning>φορώ</meaning></verb>
+    <verb><base>weave</base><past>wove</past><participle>woven</participle><meaning>υφαίνω</meaning></verb>
+    <verb><base>weep</base><past>wept</past><participle>wept</participle><meaning>κλαίω</meaning></verb>
+    <verb><base>win</base><past>won</past><participle>won</participle><meaning>κερδίζω</meaning></verb>
+    <verb><base>wind</base><past>wound</past><participle>wound</participle><meaning>τυλίγω</meaning></verb>
+    <verb><base>withdraw</base><past>withdrew</past><participle>withdrawn</participle><meaning>αποσύρω</meaning></verb>
+    <verb><base>write</base><past>wrote</past><participle>written</participle><meaning>γράφω</meaning></verb>
+
+</verbs>

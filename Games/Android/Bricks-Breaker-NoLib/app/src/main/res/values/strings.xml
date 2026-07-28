@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bricks Game Retro</string>
+    <string name="difficulty">Difficulty?</string>
+    <string name="restart">RESTART</string>
+    <string name="esc">ESC</string>
+    <string name="synchronizing_objects">Synchronizing Objects…</string>
+</resources>
