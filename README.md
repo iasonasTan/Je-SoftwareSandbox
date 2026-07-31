@@ -2,14 +2,22 @@
 A collection of applications and games made by Jason Tan.
 
 ## Languages
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white)
+<img height="100" alt="cNc++" src="https://github.com/user-attachments/assets/66289d02-8617-467d-8088-1c7c1a8cab12" />
+<img height="100" alt="dlang" src="https://github.com/user-attachments/assets/868353e0-c876-477e-8a57-4d2d37c5e09a" />
+<img height="100" alt="java" src="https://github.com/user-attachments/assets/eeede949-9163-4ecd-95a4-9a8eecc9ca48" />
+
+## Libraries
+<img height="100" alt="Screenshot 2026-07-31 at 18-11-26 jMonkeyEngine logo - Αναζήτηση Google" src="https://github.com/user-attachments/assets/6cdaee62-9d17-47b0-8c6d-70b00dd60bb3" />
+<img height="100" alt="Screenshot 2026-07-31 at 18-11-59 JavaFX logo - Αναζήτηση Google" src="https://github.com/user-attachments/assets/55b9e37b-3228-4b03-93e4-a5ac291b3bf9" />
+<img height="100" alt="Screenshot 2026-07-31 at 18-13-42 DlangUI logo - Αναζήτηση Google" src="https://github.com/user-attachments/assets/97584e52-6e40-4417-ab2d-c5450725ebeb" />
+<img height="100" alt="Screenshot 2026-07-31 at 18-14-03 java swing logo - Αναζήτηση Google" src="https://github.com/user-attachments/assets/b990ac06-d1b2-4152-9c3d-4792d9f67195" />
+<img height="100" alt="Screenshot 2026-07-31 at 18-14-36 LibGDX logo - Αναζήτηση Google" src="https://github.com/user-attachments/assets/10e36079-cde0-4894-af5e-99a3bf8d792f" />
+<img height="100" alt="Screenshot 2026-07-31 at 18-15-07 android developer logo - Αναζήτηση Google" src="https://github.com/user-attachments/assets/6509f0b7-3ad0-43bf-9221-a1d98c53d3c1" />
+
 
 ## Folders and sub-folders
 ```bash
-   ~/Projects/Je-SoftwareSandbox ❯ tree -d -L 3
+~/Projects/Je-SoftwareSandbox ❯ tree -d -L 3
 .
 ├── Apps
 │   ├── Android # (All made in java)
