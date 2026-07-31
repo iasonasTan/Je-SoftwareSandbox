@@ -1,6 +1,13 @@
 # Je Software Sandbox
-A collection of applications and games made with C/C++, Java and Dlang.
+A collection of applications and games made by Jason Tan.
 
+## Languages
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white)
+
+## Folders and sub-folders
 ```bash
    ~/Projects/Je-SoftwareSandbox ❯ tree -d -L 3
 .
