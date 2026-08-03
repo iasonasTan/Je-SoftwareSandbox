@@ -1,0 +1,16 @@
+#/usr/bin/env bash
+
+cd src
+
+javac \
+    --class-path "../libs/Lib-v1.2.0.jar:." \
+    app/avg/main/Main.java
+
+cd ..
+
+jar -cfe \
+    jars/App.jar \
+    app.avg.main.Main \
+    -C resources/ . \
+    -C src/ . \
+    -C libs/libsrc/ .

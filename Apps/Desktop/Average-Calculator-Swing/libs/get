@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#find libsrc/ -type f -name "*$1*" -exec cat {} | grep "*$2*" \
+find libsrc/ -type f -name "*$1*" -exec grep "$2" {} \;

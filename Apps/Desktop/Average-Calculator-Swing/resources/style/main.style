@@ -1,0 +1,8 @@
+#image
+
+font_family=/font/jetbrainsmono-bold.ttf
+background=61,86,129
+foreground=194,169,126
+focusable=true
+size=250x50
+alignment=left

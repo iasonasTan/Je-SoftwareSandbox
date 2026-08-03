@@ -1,0 +1,9 @@
+#/usr/bin/env bash
+
+clear
+./build
+
+#run jar
+java -jar jars/App.jar
+
+./clean
