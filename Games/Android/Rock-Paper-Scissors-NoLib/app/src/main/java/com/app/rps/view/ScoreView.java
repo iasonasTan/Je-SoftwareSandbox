@@ -24,10 +24,10 @@ public class ScoreView extends AppCompatTextView {
 
     @Override
     public void setText(CharSequence text, BufferType type) {
-        super.setText(text, type);
-        if(ConfigurationProvider.sScoreAnimationsEnabled) {
+        if(ConfigurationProvider.sScoreAnimationsEnabled && !getText().equals(text)) {
             anim();
         }
+        super.setText(text, type);
     }
 
     public void anim() {
