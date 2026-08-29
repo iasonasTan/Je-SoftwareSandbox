@@ -25,6 +25,7 @@ A collection of applications and games made by Jason Tan.
 │   │   ├── Linguistic-Links-Quiz # Asks you for the Categories of the greek linguistic links
 │   │   └── Math-Helper-Quiz # Asks you for the result of simple mathematical operations
 │   └── Desktop
+│       ├── TierList # Tier list app for desktop (made with JavaFX)
 │       ├── App-Server-Ascii-Art # Version checking server with a very nice ascii effect of the java logo (Made with java)
 │       ├── Average-Calculator-Jfx # Counts the average value of the numbers that you enter (Made with Java and JavaFX)
 │       ├── AverageCounter-DlangUI # Counts the average value of the numbers that you enter (Made with D and DlangUI)
@@ -42,6 +43,7 @@ A collection of applications and games made by Jason Tan.
     │   ├── Rock-Paper-Scissors-NoLib # Rock Paper Scissors game with some extra features.
     │   └── Snake-LibGDX # Snake/Apple/Rocks game made with LibGDX for Android.
     └── Desktop
+        ├── Snake-Swing # Snake game (made with Java Swing & AWT)
         ├── Console-Eater-NoLib # Pacman-Like game made with CPP (only TUI)
         └── Parkour-Game-jME # Simple parkour and chaser game (3D, jMonkeyEngine)
 ```
