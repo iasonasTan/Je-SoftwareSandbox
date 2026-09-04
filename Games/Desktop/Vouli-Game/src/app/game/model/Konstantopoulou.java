@@ -1,0 +1,63 @@
+package app.game.model;
+
+import app.game.lib.Context;
+import app.game.lib.model.Model;
+import app.game.lib.model.ThrowableModel;
+import lib.game.bounds.*;
+import lib.io.Resources;
+
+import javax.sound.sampled.Clip;
+import java.awt.*;
+
+public class Konstantopoulou extends AbstractEnemy {
+
+    public Konstantopoulou(Context context) {
+        super(context);
+    }
+
+    @Override
+    protected Image attackSprite() {
+        return Resources.loadImage("/res/game/konstantopoulou/model_attack.png");
+    }
+
+    @Override
+    protected ThrowableModel createThrowableModel(Vector2 target) {
+        return new Zoe(context, this, target);
+    }
+
+    @Override
+    public void update(double delta) {
+        super.update(delta);
+    }
+
+    @Override
+    protected Clip attackSound() {
+        return Resources.loadClip("/res/game/konstantopoulou/ti_eipate.wav");
+    }
+
+    @Override
+    protected Clip killSound() {
+        return Resources.loadClip("/res/game/konstantopoulou/tha_ti_skotoso.wav");
+    }
+
+    @Override
+    protected Image killSprite() {
+        return Resources.loadImage("/res/game/konstantopoulou/dead_model.png");
+    }
+
+    @Override
+    protected Image getSprite() {
+        return Resources.loadImage("/res/game/konstantopoulou/model.png");
+    }
+
+    public static final class Zoe extends ThrowableModel {
+        public Zoe(Context context, Model parent, Vector2 target) {
+            super(context, parent, target);
+        }
+
+        @Override
+        protected Image getSprite() {
+            return Resources.loadImage("/res/game/konstantopoulou/throwable.png");
+        }
+    }
+}

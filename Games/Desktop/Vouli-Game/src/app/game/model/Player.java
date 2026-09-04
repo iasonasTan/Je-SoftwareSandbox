@@ -1,0 +1,127 @@
+package app.game.model;
+
+import app.game.lib.Context;
+import app.game.lib.model.DamageableModel;
+import app.game.lib.model.Model;
+import app.game.lib.model.ThrowableModel;
+import lib.LazyExecutor;
+import lib.game.bounds.Vector2;
+import lib.game.score.ScoreManager;
+import lib.gui.event.KeyEventHandler;
+import lib.io.Resources;
+import lib.media.Sound;
+
+import javax.sound.sampled.Clip;
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.util.List;
+
+public final class Player extends DamageableModel {
+	private final PlayerMouseListener mKeyListener = new PlayerMouseListener();
+    private final Clip mAttackSound = Resources.loadClip("/res/game/ksilouris/siopi.wav");
+    private final ScoreManager mScoreMan = ScoreManager.fromSaved();
+
+    public Player(Context context) {
+        super(context, 4);
+        context.addKeyListener(new PlayerKeyListener());
+        context.addMouseListener(mKeyListener);
+    }
+
+    @Override
+    protected void onKilled() {
+        super.onKilled();
+        mAttackSound.close();
+        mScoreMan.close();
+    }
+
+    @Override
+    protected Image getSprite() {
+        return Resources.loadImage("/res/game/ksilouris/model.png");
+    }
+
+    @Override
+    protected Clip killSound() {
+        return Resources.loadOneUseClip("/res/game/ksilouris/iphone30.wav");
+    }
+
+    @Override
+    protected Image killSprite() {
+        return Resources.loadImage("/res/game/ksilouris/dead_model.png");
+    }
+
+    public ScoreManager getScoreMan() {
+        return mScoreMan;
+    }
+
+    @Override
+    public void render(Graphics g) {
+        super.render(g);
+        g.setColor(Color.WHITE);
+        g.drawString(String.format("Score: %.0f, BestScore: %.0f", mScoreMan.getScore(), mScoreMan.getBestScore()), 10, 30);
+    }
+
+    private final class PlayerMouseListener extends LazyExecutor implements MouseListener {
+        private final Image mAttackSprite = Resources.loadImage("/res/game/ksilouris/model_attack.png");
+
+        public PlayerMouseListener() { super(500L); }
+
+        @Override 
+        public void mousePressed(MouseEvent mouseEvent) {
+            requestExecute(new Vector2(mouseEvent.getPoint()));
+        }
+
+        @Override public void mouseClicked  (MouseEvent mouseEvent) {}
+        @Override public void mouseReleased (MouseEvent mouseEvent) {}
+        @Override public void mouseEntered  (MouseEvent mouseEvent) {}
+        @Override public void mouseExited   (MouseEvent mouseEvent) {}
+
+        @Override
+        protected void execute(Object... params) {
+            Vector2 target = (Vector2)params[0];
+            ThrowableModel frape = new Frape(context, Player.this, target);
+            context.addModel("FRAPE_"+frape.hashCode(), frape);
+            useSprite(mAttackSprite, getBreakTime());
+            Sound.playSFX(mAttackSound);
+        }
+    }
+
+    private final class PlayerKeyListener extends KeyEventHandler {
+        private static final double SPEED = 5;
+
+        @Override protected void onPress(int kc) {
+        	switch(kc) {
+                case KeyEvent.VK_W: addVelocity(new Vector2(0, -SPEED)); break;
+                case KeyEvent.VK_A: addVelocity(new Vector2(-SPEED, 0)); break;
+                case KeyEvent.VK_S: addVelocity(new Vector2(0, +SPEED)); break;
+                case KeyEvent.VK_D: addVelocity(new Vector2(+SPEED, 0)); break;
+                case KeyEvent.VK_SPACE:
+                    List<AbstractEnemy> models = context.getInstancesOf(AbstractEnemy.class);
+                    if(!models.isEmpty())
+                        mKeyListener.requestExecute(models.get(0).copyPosition());
+                    break;
+            }
+		}
+
+		@Override protected void onRelease(int kc) {
+			switch (kc) {
+				case KeyEvent.VK_W: addVelocity(new Vector2(0, +SPEED)); break;
+	            case KeyEvent.VK_A: addVelocity(new Vector2(+SPEED, 0)); break;
+	            case KeyEvent.VK_S: addVelocity(new Vector2(0, -SPEED)); break;
+	            case KeyEvent.VK_D: addVelocity(new Vector2(-SPEED, 0)); break;
+	        }	
+		}
+    }
+
+    public static final class Frape extends ThrowableModel {
+        public Frape(Context context, Model parent, Vector2 target) {
+            super(context, parent, target);
+        }
+
+        @Override
+        protected Image getSprite() {
+            return Resources.loadImage("/res/game/ksilouris/throwable.png");
+        }
+    }
+}
