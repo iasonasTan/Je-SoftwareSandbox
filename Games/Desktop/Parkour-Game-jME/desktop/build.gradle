@@ -18,6 +18,7 @@ application {
     if (System.getProperty("os.name").toLowerCase().contains("mac")) {
         applicationDefaultJvmArgs = ['-XstartOnFirstThread'] // this is when using a Mac as a development machine which requires the AppKit main UI thread to be used for GUI applications
     }
+    mainClass = "org.je.game.desktopmodule.DesktopLauncher"
 }
 
 ext.jmonkeyengineVersion = '3.8.1-stable'

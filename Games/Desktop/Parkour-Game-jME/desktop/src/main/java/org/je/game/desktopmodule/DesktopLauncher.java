@@ -11,9 +11,6 @@ public class DesktopLauncher {
         final Game game = new Game();
         final AppSettings appSettings = new AppSettings(true);
 
-	    //appSettings.setWindowWidth(1366);
-        //appSettings.setWindowHeight(768);
-        //appSettings.setFullscreen(false);
 	    appSettings.setWindowSize(1366, 768);
 
         game.setSettings(appSettings);

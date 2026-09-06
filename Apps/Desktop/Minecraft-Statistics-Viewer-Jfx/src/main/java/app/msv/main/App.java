@@ -15,14 +15,15 @@ public class App extends Application implements Context {
 
     @Override
     public void start(final Stage stage) {
+        Configuration.init("je-minecraft-statistics-viewer");
+
         addBroadcastReceiver("pageman", message -> {
             if (message instanceof String str) {
                 showPage(stage, str);
             }
         });
 
-        String message = Configuration.loadProperties("settings.properties").getS    public void showPage(Stage stage, String name) {
-tring("username") == null
+        String message = Configuration.loadProperties("settings.properties").getString("username") == null
                 ? "login"
                 : "home";
         sendBroadcast("pageman", message);

@@ -17,6 +17,12 @@ application {
   applicationDefaultJvmArgs = ["--enable-native-access=javafx.graphics", "--enable-native-access=ALL-UNNAMED"]
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'app.msv.main.App'
+    }
+}
+
 dependencies {
   implementation 'com.owlike:genson:1.6'
   implementation files('libs/Lib-v1.2.0.jar')

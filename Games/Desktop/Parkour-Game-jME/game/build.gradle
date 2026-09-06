@@ -9,6 +9,12 @@ java {
 }
 ext.jmonkeyengineVersion = '3.8.1-stable'
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'je.game.desktopmodule.DesktopLauncher'
+    }
+}
+
 dependencies {
     implementation 'org.jmonkeyengine:jme3-core:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-jogg:' + jmonkeyengineVersion
@@ -16,5 +22,4 @@ dependencies {
 
     implementation 'org.jmonkeyengine:jme3-effects:' + jmonkeyengineVersion
     implementation 'org.jmonkeyengine:jme3-terrain:' + jmonkeyengineVersion
-    //implementation 'org.jmonkeyengine:jme3-jbullet:' + jmonkeyengineVersion
 }

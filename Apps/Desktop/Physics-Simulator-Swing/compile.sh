@@ -1,2 +1,2 @@
 #!/bin/bash
-javac com/app/main/Main.java
+javac -d out com/app/main/Main.java

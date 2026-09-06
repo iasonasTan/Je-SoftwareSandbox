@@ -154,14 +154,18 @@ public final class RainEffect implements CliEffect {
 
         @Override
         protected void initFrames(List<char[][]> frames) throws URISyntaxException {
-            Path folderPath = Paths.get(getClass().getResource("/res/frames/").toURI());
-            try (DirectoryStream<Path> stream=Files.newDirectoryStream(folderPath)) {
-                for(Path path: stream) {
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(Files.newInputStream(path)));
+            final int FRAMES_COUNT = 8;
+            for(int i=0; i<FRAMES_COUNT; i++) {
+                try {
+                    InputStream inputStream = getClass().getResourceAsStream("/res/frames/frame"+i+".txt");
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
                     frames.add(decodeLine(reader));
+                    reader.close();
+                    inputStream.close();
+                } catch (IOException | NullPointerException e) {
+                    // ignore
+                    System.out.println("Skipped one frame.");
                 }
-            } catch (IOException exception) {
-                throw new RuntimeException(exception);
             }
         }
         
