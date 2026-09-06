@@ -8,24 +8,24 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-public class MyTextView extends TextView {
+public class AppConfiguredTextView extends TextView {
     private final Vibrator mVibrator;
     private final VibrationEffect mDenialVibeEffect;
 
-    public MyTextView(Context context) {
+    public AppConfiguredTextView(Context context) {
         this(context, null);
     }
 
-    public MyTextView(Context context, @Nullable AttributeSet attrs) {
+    public AppConfiguredTextView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public MyTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public AppConfiguredTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         this(context, attrs, defStyleAttr, 0);
     }
 
     // constructor always runs
-    public MyTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public AppConfiguredTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         mVibrator = context.getSystemService(Vibrator.class);
         mDenialVibeEffect = VibrationEffect.createOneShot(70, VibrationEffect.EFFECT_HEAVY_CLICK);

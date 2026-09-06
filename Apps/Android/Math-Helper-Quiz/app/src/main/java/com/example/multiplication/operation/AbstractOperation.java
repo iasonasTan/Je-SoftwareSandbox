@@ -1,14 +1,14 @@
-package com.example.multiplication.lib;
+package com.example.multiplication.operation;
 
 import androidx.annotation.NonNull;
 
 import com.example.multiplication.IntegerPair;
 
-public abstract class Operation {
+public abstract class AbstractOperation {
     private final int VALUE_LIMIT;
     private IntegerPair INTEGER_PAIR = new IntegerPair();
 
-    public Operation(int valueLimit) {
+    public AbstractOperation(int valueLimit) {
         VALUE_LIMIT = valueLimit;
         init(valueLimit);
         randomizeValues();

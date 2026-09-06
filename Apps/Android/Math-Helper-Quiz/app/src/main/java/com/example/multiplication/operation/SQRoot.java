@@ -1,9 +1,8 @@
-package com.example.multiplication.functions;
+package com.example.multiplication.operation;
 
 import com.example.multiplication.IntegerPair;
-import com.example.multiplication.lib.Operation;
 
-public class SQRoot extends Operation {
+public class SQRoot extends AbstractOperation {
     private int[] PERFECT_SQUARES;
 
     public SQRoot(int valueLimit) {
@@ -21,8 +20,6 @@ public class SQRoot extends Operation {
     @Override
     protected IntegerPair generateRandomValues(IntegerPair ignored) {
         int perfectSquare = PERFECT_SQUARES[(int)(Math.random()*PERFECT_SQUARES.length)];
-//        int a = (int)(Math.random()*perfectSquare);
-//        int b = perfectSquare-a;
         double half = perfectSquare/2.0;
         return new IntegerPair((int)half, (int)Math.ceil(half));
     }

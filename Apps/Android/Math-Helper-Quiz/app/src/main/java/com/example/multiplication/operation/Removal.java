@@ -1,9 +1,8 @@
-package com.example.multiplication.functions;
+package com.example.multiplication.operation;
 
 import com.example.multiplication.IntegerPair;
-import com.example.multiplication.lib.Operation;
 
-public class Removal extends Operation {
+public class Removal extends AbstractOperation {
     public Removal(int valueLimit) {
         super(valueLimit);
     }

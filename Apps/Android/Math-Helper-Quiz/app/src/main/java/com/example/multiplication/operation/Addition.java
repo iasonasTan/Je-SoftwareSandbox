@@ -1,10 +1,11 @@
-package com.example.multiplication.functions;
+package com.example.multiplication.operation;
 
 import com.example.multiplication.IntegerPair;
-import com.example.multiplication.lib.Operation;
 
-public class Multiplication extends Operation {
-    public Multiplication(int valueLimit) {
+import java.util.Locale;
+
+public class Addition extends AbstractOperation {
+    public Addition(int valueLimit) {
         super(valueLimit);
     }
 
@@ -15,11 +16,11 @@ public class Multiplication extends Operation {
 
     @Override
     protected int solveFor(IntegerPair pair) {
-        return pair.a*pair.b;
+        return pair.a + pair.b;
     }
 
     @Override
     protected String getString(IntegerPair pair) {
-        return pair.a+" × "+pair.b;
+        return String.format(Locale.getDefault(), "%d + %d", pair.a, pair.b);
     }
 }

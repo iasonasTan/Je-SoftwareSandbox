@@ -12,27 +12,22 @@ import androidx.core.content.ContextCompat;
 
 import com.example.multiplication.R;
 
-public class MyButton extends Button {
+public class AppConfiguredButton extends Button {
     private Vibrator mVibrator;
     private final VibrationEffect mVibrationEffect = VibrationEffect.createOneShot(40, VibrationEffect.EFFECT_TICK);
 
-    public MyButton(Context context) {
+    public AppConfiguredButton(Context context) {
         super(context);
         init();
     }
 
-    public MyButton(Context context, AttributeSet attrs) {
+    public AppConfiguredButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public MyButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public AppConfiguredButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init();
-    }
-
-    public MyButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
         init();
     }
 
@@ -53,9 +48,10 @@ public class MyButton extends Button {
 
     @Override
     public boolean performClick() {
-        animate().scaleX(0.90f).scaleY(0.90f).setDuration(100L).withEndAction(
-                () -> animate().scaleX(1).scaleY(1).setDuration(100)
-        ).start();
+        animate()
+                .scaleX(0.90f).scaleY(0.90f).setDuration(100L)
+                .withEndAction(() -> animate().scaleX(1).scaleY(1).setDuration(100))
+                .start();
         return super.performClick();
     }
 

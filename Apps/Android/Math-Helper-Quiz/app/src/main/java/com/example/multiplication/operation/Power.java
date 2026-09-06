@@ -1,9 +1,8 @@
-package com.example.multiplication.functions;
+package com.example.multiplication.operation;
 
 import com.example.multiplication.IntegerPair;
-import com.example.multiplication.lib.Operation;
 
-public class Power extends Operation {
+public class Power extends AbstractOperation {
     private final String[] SUPERSCRIPTS = {"⁰", "¹", "²", "³", "⁴", "⁵"};
 
     public Power(int valueLimit) {
