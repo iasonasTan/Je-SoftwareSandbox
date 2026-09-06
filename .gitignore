@@ -1,3 +1,5 @@
+.settings
 *.class
 *.out
 *.kate-swp
+*.rv1.*
